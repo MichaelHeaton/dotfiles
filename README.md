@@ -16,7 +16,7 @@ git init --bare $HOME/.dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 ```
 
-# Since this demo uses github.com to share the repository, we set the name of the branch to main.
+## Since this demo uses github.com to share the repository, we set the name of the branch to main.
 ```bash
 dotfiles branch -M main
 ```
@@ -64,8 +64,11 @@ dotfiles push -u origin main
 ```
 
 # How to Clone to new system
+TODO: Test these steps on another system
 
-git clone --bare https://github.com/MichaelHeaton/dotfiles $HOME/.dotfiles
+```bash
+git clone --bare git@github.com:MichaelHeaton/dotfiles.git $HOME/.dotfiles
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dot checkout
 dot config --local status.showUntrackedFiles no
+```
