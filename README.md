@@ -60,7 +60,7 @@ dotfiles push -u origin main
 ```bash
 dotfiles add {path to file}
 dotfiles commit -m "Commit {Your commit notes}"
-dotfiles push -u origin main
+dotfiles push
 ```
 
 # How to Clone to new system
